@@ -2,7 +2,7 @@
 
 Random number generator of many statistical distributions.
 
-Demo: https://wassname.github.io/random.js](https://wassname.github.io/random.js)
+Demo: [https://wassname.github.io/random.js](https://wassname.github.io/random.js)
 
 Algorithm reference: [http://ftp.arl.mil/random/random.pdf](http://ftp.arl.mil/random/random.pdf)
 
