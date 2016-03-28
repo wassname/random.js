@@ -2,7 +2,7 @@
 
 Random number generator of many statistical distributions.
 
-Demo: [http://blog.codinglabs.org/demo/distributions.html](http://blog.codinglabs.org/demo/distributions.html)
+Demo: https://wassname.github.io/random.js](https://wassname.github.io/random.js)
 
 Algorithm reference: [http://ftp.arl.mil/random/random.pdf](http://ftp.arl.mil/random/random.pdf)
 
@@ -32,9 +32,9 @@ var newPoint = random.normal(0, 1);
 
 ## Probability Distribution Functions
 ### Continuous Distributions
-arcsine(min, max); 
+arcsine(min, max);
 
-beta(v, w, min, max); 
+beta(v, w, min, max);
 
 cauchy(a, b);
 
