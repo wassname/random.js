@@ -43,11 +43,15 @@ $(window).ready(function () {
             bins: 80
         }
 
-        var npoints = gui.add(distGuiConfig, 'npoints').onChange(genSelected.bind(this))
-        var bins = gui.add(distGuiConfig, 'bins').onChange(genSelected.bind(this))
+        var metaFolder = gui.addFolder('meta');
+        var npoints = metaFolder.add(distGuiConfig, 'npoints').onChange(genSelected.bind(this))
+        var bins = metaFolder.add(distGuiConfig, 'bins').onChange(genSelected.bind(this))
+        metaFolder.open()
+
+        var distFolder = gui.addFolder('distributions');
         for (var name in distributions) {
             if (distributions.hasOwnProperty(name)) {
-                var folder = gui.addFolder(name);
+                var folder = distFolder.addFolder(name);
                 distGuiConfig[name] = {
                     on: initialOn.indexOf(name) > -1
                 }
@@ -65,6 +69,7 @@ $(window).ready(function () {
                 if (distGuiConfig[name].on) folder.open()
             }
         }
+        // distFolder.open()
 
         // init chart
         chart = c3.generate({
